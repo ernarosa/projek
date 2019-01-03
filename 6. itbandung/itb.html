@@ -1,0 +1,1296 @@
+
+<!DOCTYPE html>
+<html data-ng-app="app" class="ie8 no-js ie" id="ng-app" xmlns:ng="http://angularjs.org">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--<meta name="keywords" content="">
+        <meta name="description" content="">-->
+
+        <meta name="title" content="Institut Teknologi Bandung, Bandung, Indonesia,  Beranda - ">
+        <meta name="keywords" content="itb, institut teknologi bandung, bandung, indonesia, ITB, Institution of higher learning of science, technology, and fine arts, with a mission of education, research, and services to the community.">
+        <meta name="author" content="Webmaster Team, Direktorat  Sistem dan Teknologi Informasi  ITB">
+        <meta name="description" content="In Harmoniae Progressio - Kemajuan dalam keselarasan">
+        <!-- Schema.org markup for Google+
+        <meta itemprop="name" content="Institut Teknologi Bandung">
+        <meta itemprop="description" content="This is the page description">
+        <meta itemprop="image" content="https://www.itb.ac.id/images/logo-itb.png">
+        -->
+        <!--S:fb meta-->
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content=https://itb.ac.id/themes/default/images/logoitb.png />
+        <meta property="og:title" content="Beranda - " />
+        <meta property="og:url" content="https://www.itb.ac.id/" />
+        <meta property="og:site_name" content="Institut Teknologi Bandung" />
+        <meta property="og:description" content="In Harmoniae Progressio - Kemajuan dalam keselarasan" />
+        <meta property="fb:admins" content="10208322639923490" />
+        <meta property="fb:app_id" content="829371137173499" />
+        <!-- e:fb meta -->
+
+        <!-- S:tweeter card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@itbofficial" />
+        <meta name="twitter:creator" content="@itbofficial">
+        <meta name="twitter:title" content="Beranda - " />
+        <meta name="twitter:description" content="In Harmoniae Progressio - Kemajuan dalam keselarasan" />
+        <meta name="twitter:image" content=https://itb.ac.id/themes/default/images/logoitb.png />
+    <!-- E:tweeter card -->
+
+    <title>Beranda - Institut Teknologi Bandung</title>
+    <link href="https://www.itb.ac.id/" rel="canonical" />
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">-->
+    <!--<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=">-->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+                                            <link rel="stylesheet"
+                      href="https://www.itb.ac.id/assets/css/bootstrap.min.css">
+                                                <link rel="stylesheet"
+                      href="https://www.itb.ac.id/assets/css/angular-bootstrap-calendar.min.css">
+                                                <link rel="stylesheet"
+                      href="https://www.itb.ac.id/themes/default/css/main.css">
+                                                <link rel="stylesheet"
+                      href="https://www.itb.ac.id/themes/default/css/style.css">
+                                                <link rel="stylesheet" href="itb2.css">
+                                                <link rel="stylesheet"
+                      href="https://www.itb.ac.id/themes/default/css/carousel.css">
+                                                <link rel="stylesheet"
+                      href="https://www.itb.ac.id/themes/default/css/font-awesome.min.css">
+                                                <link rel="stylesheet" href="itb.css">
+                                                <link rel="stylesheet"
+                      href="https://www.itb.ac.id/themes/default/css/default.css">
+                                                
+                                                
+
+                        
+    <link rel="stylesheet" href="https://www.itb.ac.id/themes/default/css/all.css">
+    <link rel="stylesheet" href="https://www.itb.ac.id/assets/css/animate.css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="https://www.itb.ac.id/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="https://www.itb.ac.id/assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="https://www.itb.ac.id/assets/js/jquery_002.js"></script>
+    <script src="https://www.itb.ac.id/assets/js/scripts.js"></script>
+    <script src="https://www.itb.ac.id/assets/js/modernizr.custom.js"></script>
+    <script src="https://www.itb.ac.id/assets/js/intro/modernizr-2.6.2.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--leafletjs-->
+    <link rel="stylesheet" href="https://www.itb.ac.id/assets/css/leaflet.css" />
+    <!--<script src="https://www.itb.ac.id/assets/js/leaflet.js"></script>-->
+    <!--anularjs-->
+    <script src="https://www.itb.ac.id/assets/js/ng/angular.min.js"></script>
+    <script src="https://www.itb.ac.id/assets/js/ng/angular-animate.js"></script>
+    <script src="https://www.itb.ac.id/assets/js/ng/angular-scroll.min.js"></script>
+    <script src="https://www.itb.ac.id/assets/js/ng/angular-bootstrap.min.js"></script>
+    <script src="https://www.itb.ac.id/assets/js/ng/angular-parallax.js"></script>
+    <script src="https://www.itb.ac.id/assets/js/ng/angulargrid.min.js"></script>
+    <script src="https://www.itb.ac.id/assets/js/ng/angular-bootstrap-lightbox.min.js"></script>
+    <script>
+        var app = angular.module('app', ['mwl.calendar','ngAnimate','duParallax','angularGrid','bootstrapLightbox']);
+
+
+    </script>
+    <script>
+        (function() {
+            var cx = '018371853661177118187:ueyrgpzsvu0';
+            var cx = '009294073571019283593:iiyhjfi55o4';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+
+
+    </script>
+    
+<!-- GOOGLE ANALYTICS START -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-567298-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- GOOGLE ANALYTICS END -->
+
+</head>
+<body class="s1-collapse s2-collapse hu-smoothscroll" data-ng-app="app">
+
+
+
+
+
+
+
+
+
+
+
+<header id="header" class="both-menus-mobile-on header-ads-desktop id1 fixed-header-on"
+        style="padding:0px; height:50px;">
+    <div class="navbar">
+        <div class="container">
+            <nav class="nav-container group  desktop-menu desktop-sticky sticky-visible" id="nav-topbar"
+                 data-menu-id="header-1">
+
+
+                <!-- <div class="ham__navbar-toggler collapsed" aria-expanded="false">
+      <div class="ham__navbar-span-wrapper">
+        <span class="ham-toggler-menu__span"></span>
+      </div>
+    </div> -->
+                <div class="ham__navbar-toggler-two collapsed" title="Menu" role="navigation" aria-expanded="false">
+                    <div class="ham__navbar-span-wrapper">
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                    </div>
+                </div>
+                <div class="nav-text">Main Menu</div>
+                <div class="topbar-toggle-down">
+                    <span class="fa fa-angle-double-down" aria-hidden="true" data-toggle="down" title="Expand menu"></span>
+                    <span class="fa fa-angle-double-up" aria-hidden="true" data-toggle="up" title="Collapse menu"></span>
+                </div>
+                <div class="nav-wrap">
+                    <ul id="menu-top-menu" class="nav container-inner group">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom current_page_item">
+                            <a
+                                    href="https://www.itb.ac.id/">Beranda</a></li>
+
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tentang ITB</a>
+                                                                    <ul class="sub-menu">
+                                                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                                <a href="#"
+                                                   target="_self" class="" data-toggle="dropdown">Informasi Umum dan Sejarah </a>
+                                                                                                    <ul class="sub-menu">
+                                                                                                                    <li >
+                                                                <a href="https://www.itb.ac.id/informasi-publik"
+                                                                   target="_self" >Informasi Umum </a>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="http://usm.itb.ac.id/wp/?page_id=2125"
+                                                                   target="_blank" >Fakta dan Angka </a>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="https://www.itb.ac.id/visi-dan-misi"
+                                                                   target="_self" >Visi dan Misi </a>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="https://www.itb.ac.id/sejarah-dan-masa-depan"
+                                                                   target="_self" >Sejarah </a>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="https://infopublik.itb.ac.id"
+                                                                   target="_blank" >Informasi Publik </a>
+                                                                                                                            </li>
+                                                                                                            </ul>
+                                                                                            </li>
+                                                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                                <a href="#"
+                                                   target="_self" class="" data-toggle="dropdown">Administrasi </a>
+                                                                                                    <ul class="sub-menu">
+                                                                                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                                                <a href="#"
+                                                                   target="_self" class="" data-toggle="dropdown">Organ ITB </a>
+                                                                                                                                    <ul class="sub-menu">
+
+                                                                                                                                                    <li>
+                                                                                <a href="https://www.itb.ac.id/pimpinan"
+                                                                                   target="_self">Pimpinan </a>
+                                                                            </li>
+                                                                                                                                                    <li>
+                                                                                <a href="http://mwa.itb.ac.id/"
+                                                                                   target="_blank">Majelis Wali Amanat </a>
+                                                                            </li>
+                                                                                                                                                    <li>
+                                                                                <a href="http://sa.itb.ac.id/"
+                                                                                   target="_blank">Senat Akademik </a>
+                                                                            </li>
+                                                                                                                                                    <li>
+                                                                                <a href="https://www.itb.ac.id/struktur-organisasi"
+                                                                                   target="_self">Struktur Organisasi </a>
+                                                                            </li>
+                                                                                                                                            </ul>
+                                                                                                                            </li>
+                                                                                                            </ul>
+                                                                                            </li>
+                                                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                                <a href="#"
+                                                   target="_self" class="" data-toggle="dropdown">Mengunjungi ITB </a>
+                                                                                                    <ul class="sub-menu">
+                                                                                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                                                <a href="#"
+                                                                   target="_self" class="" data-toggle="dropdown">Kunjungan Resmi </a>
+                                                                                                                                    <ul class="sub-menu">
+
+                                                                                                                                                    <li>
+                                                                                <a href="kerma"
+                                                                                   target="_self">Kerjasama </a>
+                                                                            </li>
+                                                                                                                                                    <li>
+                                                                                <a href="https://www.itb.ac.id/kunjungan-sekolah"
+                                                                                   target="_self">Kunjungan Sekolah </a>
+                                                                            </li>
+                                                                                                                                                    <li>
+                                                                                <a href="http://bosscha.itb.ac.id/"
+                                                                                   target="_blank">Observatorium Bosscha </a>
+                                                                            </li>
+                                                                                                                                            </ul>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="http://petakampus.itb.ac.id/"
+                                                                   target="_blank" >Peta Kampus </a>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="https://www.itb.ac.id/pusat-informasi-kampus"
+                                                                   target="_self" >Pusat Informasi Kampus </a>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="https://www.itb.ac.id/parkir"
+                                                                   target="_self" >Parkir </a>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="http://galerisoemardja.fsrd.itb.ac.id/"
+                                                                   target="_blank" >Galeri Soemardja </a>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="https://www.itb.ac.id/perpustakaan"
+                                                                   target="_self" >Perpustakaan </a>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="https://www.itb.ac.id/bank-dan-atm"
+                                                                   target="_self" >Bank dan ATM </a>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="https://www.itb.ac.id/tempat-ibadah"
+                                                                   target="_self" >Tempat Ibadah </a>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="https://www.itb.ac.id/kantin"
+                                                                   target="_self" >Kantin </a>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="https://www.itb.ac.id/toko"
+                                                                   target="_self" >Toko </a>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="https://www.itb.ac.id/penginapan"
+                                                                   target="_self" >Penginapan </a>
+                                                                                                                            </li>
+                                                                                                            </ul>
+                                                                                            </li>
+                                                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                                <a href="https://www.itb.ac.id/multi-kampus"
+                                                   target="_self" >Multi Kampus </a>
+                                                                                                    <ul class="sub-menu">
+                                                                                                                    <li >
+                                                                <a href="https://www.itb.ac.id/kampus-ganesha"
+                                                                   target="_self" >Kampus Ganesha </a>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="https://www.itb.ac.id/kampus-jatinangor"
+                                                                   target="_self" >Kampus Jatinangor </a>
+                                                                                                                            </li>
+                                                                                                            </ul>
+                                                                                            </li>
+                                                                            </ul>
+                                                            </li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Penerimaan</a>
+                                                                    <ul class="sub-menu">
+                                                                                    <li >
+                                                <a href="http://usm.itb.ac.id/wp/?page_id=1328"
+                                                   target="_blank" >Program Profesi </a>
+                                                                                            </li>
+                                                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                                <a href="http://usm.itb.ac.id/wp/"
+                                                   target="_blank" class="" data-toggle="dropdown">Program Sarjana </a>
+                                                                                                    <ul class="sub-menu">
+                                                                                                                    <li >
+                                                                <a href="http://usm.itb.ac.id/wp/?page_id=28"
+                                                                   target="_blank" >SNMPTN </a>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="http://usm.itb.ac.id/wp/?page_id=77"
+                                                                   target="_blank" >SBMPTN </a>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="http://usm.itb.ac.id/wp/?page_id=122"
+                                                                   target="_blank" >International Program </a>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="http://usm.itb.ac.id/wp/?page_id=96"
+                                                                   target="_blank" >Seleksi Mahasiswa Transfer </a>
+                                                                                                                            </li>
+                                                                                                            </ul>
+                                                                                            </li>
+                                                                                    <li >
+                                                <a href="http://usm.itb.ac.id/wp/?page_id=541"
+                                                   target="_self" >Program Pasca Sarjana </a>
+                                                                                            </li>
+                                                                                    <li >
+                                                <a href="http://usm.itb.ac.id/international/?page_id=24"
+                                                   target="_self" >Student Exchange </a>
+                                                                                            </li>
+                                                                            </ul>
+                                                            </li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perkuliahan</a>
+                                                                    <ul class="sub-menu">
+                                                                                    <li >
+                                                <a href="https://www.itb.ac.id/fakultas-dan-sekolah"
+                                                   target="_self" >Fakultas dan Sekolah </a>
+                                                                                            </li>
+                                                                                    <li >
+                                                <a href="https://www.itb.ac.id/program-studi-sarjana"
+                                                   target="_self" >Program Studi Sarjana </a>
+                                                                                            </li>
+                                                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                                <a href="#"
+                                                   target="_self" class="" data-toggle="dropdown">Program Studi Pasca Sarjana </a>
+                                                                                                    <ul class="sub-menu">
+                                                                                                                    <li >
+                                                                <a href="https://www.itb.ac.id/program-studi-magister"
+                                                                   target="_self" >Program Studi Magister </a>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="https://www.itb.ac.id/program-studi-doktor"
+                                                                   target="_self" >Program Studi Doktor </a>
+                                                                                                                            </li>
+                                                                                                                    <li >
+                                                                <a href="http://usm.itb.ac.id/wp/?page_id=1297"
+                                                                   target="_blank" >Profesi Apoteker </a>
+                                                                                                                            </li>
+                                                                                                            </ul>
+                                                                                            </li>
+                                                                            </ul>
+                                                            </li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Penelitian dan Publikasi</a>
+                                                                    <ul class="sub-menu">
+                                                                                    <li >
+                                                <a href="https://www.itb.ac.id/pusat-pusat-penelitian-dan-pusat-unggulan-iptek"
+                                                   target="_self" >Pusat,  Pusat Penelitian, dan Pusat Unggulan Iptek </a>
+                                                                                            </li>
+                                                                                    <li >
+                                                <a href="https://www.itb.ac.id/kelompok-keahliankeilmuan"
+                                                   target="_self" >Kelompok Keahlian/Keilmuan </a>
+                                                                                            </li>
+                                                                                    <li >
+                                                <a href="https://www.itb.ac.id/jurnal"
+                                                   target="_self" >Jurnal </a>
+                                                                                            </li>
+                                                                            </ul>
+                                                            </li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Civitas</a>
+                                                                    <ul class="sub-menu">
+                                                                                    <li >
+                                                <a href="/staff/"
+                                                   target="_self" >Staff </a>
+                                                                                            </li>
+                                                                                    <li >
+                                                <a href="/alumni"
+                                                   target="_self" >Alumni </a>
+                                                                                            </li>
+                                                                                    <li >
+                                                <a href="http://iom.itb.ac.id/"
+                                                   target="_blank" >Orang tua </a>
+                                                                                            </li>
+                                                                            </ul>
+                                                            </li>
+                                            </ul>
+                </div>
+                <div id="header-search" class="container">
+                    <div class="container-inner">
+                        <div class="toggle-login">
+                            <a href="https://www.itb.ac.id/search" class="btn btn-info">Search <span class="fa fa-search"></span></a>
+                        </div>
+                        <div id="loginform" class="form-horizontal">
+                                                            <a href="#" onclick="window.location='https://www.itb.ac.id/auth'" class="toggle-search"><span class="fa fa-user"></span> Login </a>
+                                                    </div>
+                    </div>
+                </div>
+                <!--/.container-->
+            </nav><!--/#nav-topbar-->
+        </div>
+    </div>
+
+
+</header>
+<!-- Language -->
+<div class="languagebar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="logo">
+                            <h1>Institut Teknologi Bandung</h1>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 m-t-30 share">
+
+                        <a href="https://www.itb.ac.id/auth/change/lang/indonesian" class="indonesian"> <img src="https://www.itb.ac.id/images/flag-id.png" alt="Bahasa Indonesia" width="24" height="24"> Indonesia</a>
+                        <a href="https://www.itb.ac.id/auth/change/lang/english"><img src="https://www.itb.ac.id/images/flag-en.png" alt="English" width="24" height="24"> English</a>
+                    </div>
+                    <div class="col-sm-3 share m-t-30">
+                        <a href="https://twitter.com/itbofficial"  title="Twitter" target="_blank"><span class="fab fa-twitter"></span></a>
+                        <a href="https://www.facebook.com/institutteknologibandung" title="Facebook" target="_blank"><span class="fab fa-facebook"></span></a>
+                        <a href="https://www.youtube.com/user/itbofficial" target="_blank" title="Youtube"><span class="fab fa-youtube"></span></a>
+                        <a href="https://www.instagram.com/itb1920/" target="_blank" title="Instagram"><span class="fab fa-instagram"></span></a>
+                        <a href="https://www.itb.ac.id/rss/feed" target="_blank"  title="RSS"><span class="fas fa-rss"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Language -->
+<!-- Search Modal -->
+
+
+<div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Pencarian</h4>
+            </div>
+            <div class="modal-body ">
+                <div class="gcse-search"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div data-ng-controller="Ctrl1">
+    <div id="headline">
+        <!-- Carousel
+     ================================================== -->
+        <div id="myCarousel" class="carousel slide gallery " data-ride="carousel">
+            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                            <li data-target="#myCarousel"
+                            data-slide-to="0" class="active"></li>
+                                                <li data-target="#myCarousel"
+                            data-slide-to="1" ></li>
+                                        </ol>
+                            <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                            <img class="first-slide img-w100"
+                                 src="https://www.itb.ac.id/files/footer/top/twitter_header.png"
+                                 alt="..">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                                                        <p class="">                  </p>
+                                    <p class=""><!--<a class="btn btn-lg btn-warning"
+                                                   target=""
+                                                   href=""
+                                                   role="button">
+                                            more</a>--></p>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="item ">
+                            <img class="first-slide img-w100"
+                                 src="https://www.itb.ac.id/files/footer/top/Banner_Entrepreneurial_University.jpg"
+                                 alt=" ...">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                                                        <p class="">                  </p>
+                                    <p class=""><!--<a class="btn btn-lg btn-warning"
+                                                   target=""
+                                                   href=""
+                                                   role="button">
+                                            more</a>--></p>
+                                </div>
+                            </div>
+                        </div>
+                                        </div>
+                                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+                    </div>
+        <!-- /.carousel -->
+        <!-- Content
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+        <div id="main">     
+            <!-- Streaming Information -->
+            <div id="streaming-public" class="streaming" data-ng-show="online">
+                <div class="container">
+
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+                        <span class="fa fa-film fa-4x" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-12">
+                        <h4>Live Streaming</h4>
+                        <p>{{title}}</p><br />
+                        <a href="https://www.itb.ac.id/multimedia/streaming" class="btn btn-default">Klik Disini</a>
+                    </div>
+                </div>
+            </div>
+            <!--<div id="streaming-public" class="streaming" data-ng-show="false">
+                <div class="container">
+
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+                        <span class="fa fa-film fa-4x" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-12">
+                        <h4>Live Streaming</h4>
+                        <p>Dies Natalis Ke-59 </p><br />
+                        <a href="multimedia/streaming_diesnatalis" class="btn btn-default"></a>
+                    </div>
+                </div>
+            </div>-->
+            <!-- Public Information -->
+            <div id="main-public" class="boxes-7">
+                <div class="container public">
+                    <div class="col-lg-12 col-xs-12">
+                        <div class="col-md-3 col-sm-3 col-xs-12 p-t-b-10 pull-left">
+                            <div class="col-md-4 col-xs-3">
+                                <span class="fas fa-comments fa-3x" aria-hidden="true"></span>
+                            </div>
+                            <div class="col-md-8 col-xs-9">
+                                <a href="http://infopublik.itb.ac.id" target="_blank"><h3>Informasi Publik</h3>
+                                <span>Kami hadir, melayani informasi anda</span></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-12 p-t-b-10 pull-left">
+                            <div class="col-md-4 col-xs-3">
+                                <span class="fas fa-images fa-3x" aria-hidden="true"></span>
+                            </div>
+                            <div class="col-md-8 col-xs-9">
+                                <a href="http://infografis.itb.ac.id/" target="_blank"><h3>Infografis</h3>
+                                <span>Informasi umum dalam bentuk grafis</span></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-12 p-t-b-10 pull-left">
+                            <div class="col-md-4 col-xs-3">
+                                <span class="fa fa-graduation-cap fa-3x" aria-hidden="true"></span>
+                            </div>
+                            <div class="col-md-8 col-xs-9">
+                                <a href="http://usm.itb.ac.id" target="_blank"><h3>Penerimaan Mahasiswa</h3>
+                                <span>Penerimaan Mahasiswa Baru</span></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-12 p-t-b-10 pull-left">
+                            <div class="col-md-4 col-xs-3">
+                                <span class="fa fa-globe-asia fa-3x" aria-hidden="true"></span>
+                            </div>
+                            <div class="col-md-8 col-xs-9">
+                                <a href="http://international.itb.ac.id" target="_blank"><h3>Kemitraan dan Hubungan Internasional</h3>
+                                <span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Public Information -->
+            <!-- Admission Information -->
+                        
+            <div id="admission-public" class="addition">
+                <div class="container">
+                    <div class="col-lg-12 col-xs-12 row">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-3">
+                            <span class="fa fa-calendar-check-o fa-3x" aria-hidden="true"></span>
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-sm-11 col-xs-9">
+                            <div><a href="http://usm.itb.ac.id/" target="_blank">
+                                <h4>Open House Pendidikan ITB 2018</h4></div>
+                            <hr />
+                            <div><a href="https://www.itb.ac.id/focus/read/433/home/pengumuman-hasil-seleksi-administrasi-penerimaan-calon-pegawai-negeri-sipil-kementerian-riset-teknologi-dan-pendidikan-tinggi-tahun-ajaran-2018">
+                                <h4>Pengumuman Hasil Seleksi Administrasi Penerimaan Calon Pegawai Negeri Sipil Kementerian Riset, Teknologi, dan Pendidikan Tinggi Tahun Ajaran 2018</h4>
+                                <!--<p>Institut Teknologi Bandung</p>--></a>
+                            </div>
+                        </div>
+                    </div>                             
+                </div>
+            </div>
+            
+                        <!-- Main News -->
+            <div id="main-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 m-t-40">
+                            <!-- News -->
+                                                            <div id="main-news">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="index">
+
+                                                <div class="col-md-12">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <h2><a href="https://www.itb.ac.id/news/index/category/home">Berita</a></h2>
+                                                        </div>
+                                                                                                                    <div class="col-sm-3 col-md-3 col-xs-12">
+                                                                <div class="boxes-15">
+                                                                    <div class="thumbnail">
+                                                                        <img src="https://www.itb.ac.id/files/images/thumbs/1541151209.jpg" class="img-responsive" alt="Yuliani Dwi Lestari, Dosen ITB Peraih Prestasi bidang Sosial Humaniora " width="240" height="150" />
+                                                                    </div>
+                                                                    <div class="content caption">
+                                                                        <div class="">
+                                                                            <a><strong>Profil</strong></a><br />
+                                                                              <span class="tfro"> 2  November  2018</span>
+                                                                        </div>
+                                                                        <h4>
+                                                                            <a href="https://www.itb.ac.id/news/read/56872/home/yuliani-dwi-lestari-dosen-itb-peraih-prestasi-bidang-sosial-humaniora">Yuliani Dwi Lestari, Dosen ITB Peraih Prestasi bidang Sosial Humaniora </a>
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                    <div class="col-sm-3 col-md-3 col-xs-12">
+                                                                <div class="boxes-15">
+                                                                    <div class="thumbnail">
+                                                                        <img src="https://www.itb.ac.id/files/images/thumbs/1541064697.jpeg" class="img-responsive" alt="Berikan Kuliah Umum, Menkopolhukam Ajak Mahasiswa ITB Berperan dalam Penguatan NKRI" width="240" height="150" />
+                                                                    </div>
+                                                                    <div class="content caption">
+                                                                        <div class="">
+                                                                            <a><strong>Akademik</strong></a><br />
+                                                                              <span class="tfro"> 1  November  2018</span>
+                                                                        </div>
+                                                                        <h4>
+                                                                            <a href="https://www.itb.ac.id/news/read/56871/home/berikan-kuliah-umum-menkopolhukam-ajak-mahasiswa-itb-berperan-dalam-penguatan-nkri">Berikan Kuliah Umum, Menkopolhukam Ajak Mahasiswa ITB Berperan dalam Penguatan NKRI</a>
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                    <div class="col-sm-3 col-md-3 col-xs-12">
+                                                                <div class="boxes-15">
+                                                                    <div class="thumbnail">
+                                                                        <img src="https://www.itb.ac.id/files/images/thumbs/1540984575.jpeg" class="img-responsive" alt="Peran ITB dalam Menyongsong Pengadaan di Era Baru Industri 4.0" width="240" height="150" />
+                                                                    </div>
+                                                                    <div class="content caption">
+                                                                        <div class="">
+                                                                            <a><strong>Utama</strong></a><br />
+                                                                              <span class="tfro"> 31  Oktober  2018</span>
+                                                                        </div>
+                                                                        <h4>
+                                                                            <a href="https://www.itb.ac.id/news/read/56870/home/peran-itb-dalam-menyongsong-pengadaan-di-era-baru-industri-40">Peran ITB dalam Menyongsong Pengadaan di Era Baru Industri 4.0</a>
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                    <div class="col-sm-3 col-md-3 col-xs-12">
+                                                                <div class="boxes-15">
+                                                                    <div class="thumbnail">
+                                                                        <img src="https://www.itb.ac.id/files/images/thumbs/1540885488.JPG" class="img-responsive" alt="Lomba Kebersihan, ITB Berikan Piala Rektor Kepada Himpunan Mahasiswa Metalurgi" width="240" height="150" />
+                                                                    </div>
+                                                                    <div class="content caption">
+                                                                        <div class="">
+                                                                            <a><strong>Utama</strong></a><br />
+                                                                              <span class="tfro"> 30  Oktober  2018</span>
+                                                                        </div>
+                                                                        <h4>
+                                                                            <a href="https://www.itb.ac.id/news/read/56869/home/lomba-kebersihan-itb-berikan-piala-rektor-kepada-himpunan-mahasiswa-metalurgi">Lomba Kebersihan, ITB Berikan Piala Rektor Kepada Himpunan Mahasiswa Metalurgi</a>
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                    <div class="col-sm-3 col-md-3 col-xs-12">
+                                                                <div class="boxes-15">
+                                                                    <div class="thumbnail">
+                                                                        <img src="https://www.itb.ac.id/files/images/thumbs/1540798929.JPG" class="img-responsive" alt="Menilik Kolaborasi Riset Dunia Kedirgantaraan dan Penerbangan dalam ICASA 2018" width="240" height="150" />
+                                                                    </div>
+                                                                    <div class="content caption">
+                                                                        <div class="">
+                                                                            <a><strong>Institusi</strong></a><br />
+                                                                              <span class="tfro"> 29  Oktober  2018</span>
+                                                                        </div>
+                                                                        <h4>
+                                                                            <a href="https://www.itb.ac.id/news/read/56868/home/menilik-kolaborasi-riset-dunia-kedirgantaraan-dan-penerbangan-dalam-icasa-2018">Menilik Kolaborasi Riset Dunia Kedirgantaraan dan Penerbangan dalam ICASA 2018</a>
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                    <div class="col-sm-3 col-md-3 col-xs-12">
+                                                                <div class="boxes-15">
+                                                                    <div class="thumbnail">
+                                                                        <img src="https://www.itb.ac.id/files/images/thumbs/1540785148.jpeg" class="img-responsive" alt="ITB Gelar Upacara Peringatan Hari Sumpah Pemuda ke-90 tahun 2018" width="240" height="150" />
+                                                                    </div>
+                                                                    <div class="content caption">
+                                                                        <div class="">
+                                                                            <a><strong>Institusi</strong></a><br />
+                                                                              <span class="tfro"> 29  Oktober  2018</span>
+                                                                        </div>
+                                                                        <h4>
+                                                                            <a href="https://www.itb.ac.id/news/read/56867/home/itb-gelar-upacara-peringatan-hari-sumpah-pemuda-ke-90-tahun-2018">ITB Gelar Upacara Peringatan Hari Sumpah Pemuda ke-90 tahun 2018</a>
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                    <div class="col-sm-3 col-md-3 col-xs-12">
+                                                                <div class="boxes-15">
+                                                                    <div class="thumbnail">
+                                                                        <img src="https://www.itb.ac.id/files/images/thumbs/1540556122.jpeg" class="img-responsive" alt="ITB - Pemkab Kuantan Singingi Jalin Kerjasama" width="240" height="150" />
+                                                                    </div>
+                                                                    <div class="content caption">
+                                                                        <div class="">
+                                                                            <a><strong>MoU</strong></a><br />
+                                                                              <span class="tfro"> 26  Oktober  2018</span>
+                                                                        </div>
+                                                                        <h4>
+                                                                            <a href="https://www.itb.ac.id/news/read/56866/home/itb-pemkab-kuantan-singingi-jalin-kerjasama">ITB - Pemkab Kuantan Singingi Jalin Kerjasama</a>
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                    <div class="col-sm-3 col-md-3 col-xs-12">
+                                                                <div class="boxes-15">
+                                                                    <div class="thumbnail">
+                                                                        <img src="https://www.itb.ac.id/files/images/thumbs/1540555763.jpeg" class="img-responsive" alt="Alumni ITB '75 Serahkan Donasi Dana Lestari Tahap Pertama Sebesar 400 Juta Rupiah" width="240" height="150" />
+                                                                    </div>
+                                                                    <div class="content caption">
+                                                                        <div class="">
+                                                                            <a><strong>Alumni</strong></a><br />
+                                                                              <span class="tfro"> 26  Oktober  2018</span>
+                                                                        </div>
+                                                                        <h4>
+                                                                            <a href="https://www.itb.ac.id/news/read/56865/home/alumni-itb-75-serahkan-donasi-dana-lestari-tahap-pertama-sebesar-400-juta-rupiah">Alumni ITB '75 Serahkan Donasi Dana Lestari Tahap Pertama Sebesar 400 Juta Rupiah</a>
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                        <!-- End of News-->
+                            <!-- Banner -->
+                            <div class="container">
+                                                                    <div id="btm" class="carousel carousel2 slide " data-ride="carousel">
+                                        <!-- Indicators -->
+                                                                                    <div class="carousel-inner" role="listbox" id="fh5co-hero">
+                                                
+                                                    <div class="item active">
+                                                        <a
+                                                            class=""
+                                                            target="_self"
+                                                            href="#"
+                                                        >
+                                                            <img class="first-slide img-w100"
+                                                                 src="https://www.itb.ac.id/files/footer/bottom/IMG-20181026-WA0015.jpg"
+                                                                 alt="Top 10 QS Indonesia Ranking 2019">
+                                                            <div class="container">
+                                                                <div class="carousel-caption carousel2-caption">
+
+                                                                    <!-- <a style="color: white;text-decoration: none"
+                                                                   target=""
+                                                                   href=""
+                                                                >
+                                                                    <h2 class=""></h2>
+                                                                </a> -->
+
+                                                                    <p class=""></p>
+                                                                    <p class=""> </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    
+                                                    <div class="item ">
+                                                        <a
+                                                            class=""
+                                                            target="_self"
+                                                            href="#"
+                                                        >
+                                                            <img class="first-slide img-w100"
+                                                                 src="https://www.itb.ac.id/files/footer/bottom/IMG-20181019-WA0034.jpg"
+                                                                 alt="Pendaftaran Mail Alumni">
+                                                            <div class="container">
+                                                                <div class="carousel-caption carousel2-caption">
+
+                                                                    <!-- <a style="color: white;text-decoration: none"
+                                                                   target=""
+                                                                   href=""
+                                                                >
+                                                                    <h2 class=""></h2>
+                                                                </a> -->
+
+                                                                    <p class=""></p>
+                                                                    <p class=""> </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    
+                                                    <div class="item ">
+                                                        <a
+                                                            class=""
+                                                            target="_self"
+                                                            href="#"
+                                                        >
+                                                            <img class="first-slide img-w100"
+                                                                 src="https://www.itb.ac.id/files/footer/bottom/IMG-20181019-WA0033.jpg"
+                                                                 alt="Batas Akhir Email Students">
+                                                            <div class="container">
+                                                                <div class="carousel-caption carousel2-caption">
+
+                                                                    <!-- <a style="color: white;text-decoration: none"
+                                                                   target=""
+                                                                   href=""
+                                                                >
+                                                                    <h2 class=""></h2>
+                                                                </a> -->
+
+                                                                    <p class=""></p>
+                                                                    <p class=""> </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    
+                                                    <div class="item ">
+                                                        <a
+                                                            class=""
+                                                            target="_self"
+                                                            href="#"
+                                                        >
+                                                            <img class="first-slide img-w100"
+                                                                 src="https://www.itb.ac.id/files/footer/bottom/IMG-20181019-WA0032.jpg"
+                                                                 alt="Halo Alumni ITB Okt 2018">
+                                                            <div class="container">
+                                                                <div class="carousel-caption carousel2-caption">
+
+                                                                    <!-- <a style="color: white;text-decoration: none"
+                                                                   target=""
+                                                                   href=""
+                                                                >
+                                                                    <h2 class=""></h2>
+                                                                </a> -->
+
+                                                                    <p class=""></p>
+                                                                    <p class=""> </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                                                                </div>
+                                        
+                                        <a class="left carousel-control" href="#btm" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+
+                                        <a class="right carousel-control" href="#btm" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                                            </div>
+                             <!-- end of Banner-->
+                            <!--Multimedia-->
+                            <div id="main-multimedia">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="index">
+                                            <div class="col-sm-12"><h2><a href="https://www.itb.ac.id/multimedia">Video</a></h2></div>
+                                            <div class="col-sm-3 col-md-3 pull-left" data-ng-repeat="n in yutub">
+                                                <div class="thumbnail">
+                                                    <a data-ng-href="https://www.itb.ac.id/multimedia/watch/{{n.snippet.resourceId.videoId}}/itbofficial" data-toggle="modal" class="video"
+                                                       data-ng-click="read($index)">
+                                                        <img src="#" data-ng-src="{{ n.snippet.thumbnails.medium.url }}"
+                                                             alt="{{ n.snippet.title }}" width="320" height="180" />
+                                                    </a>
+                                                </div>
+                                                <div class="caption pull-left">
+                                                    <p><a data-ng-href="https://www.itb.ac.id/multimedia/watch/{{n.snippet.resourceId.videoId}}/itbofficial" data-toggle="modal"
+                                                          data-ng-click="read($index)">{{
+                                                            n.snippet.title }}</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End of Multimedia-->
+                            <!-- Agenda -->
+                            <div id="main-agenda">
+                                <div class="container m-b-20">
+                                    <div class="row">
+                                                                                    <div class="col-md-6 pull-left m-b-20">
+                                                <h2>Agenda Kegiatan</h2>
+                                                <div class="index">
+                                                    <!-- Agenda Articles -->
+                                                    <div class="agenda listing5">                                                        
+                                                                                                                            <div class="col-md-12 col-xs-12 p-t-b-10 b-b-2">
+                                                                <div class="col-md-2 col-xs-4 row">
+                                                                    <h3>17</h3>
+                                                                    <h4>Nov</h4>
+                                                                </div>
+                                                                <div class="col-md-10 col-xs-8">
+                                                                    <a href="https://www.itb.ac.id/agenda/read/1650/home/reuni-akbar-40-tahun-ia-itb-1978"><h5>
+                                                                        Reuni Akbar  40 Tahun,  IA  ITB 1978</h5>
+                                                                        <span class="tfro">Aula Barat dan Lapangan CC Timur</span>
+                                                                    </a>
+                                                                </div>
+                                                                </div>
+                                                                                                                            <div class="col-md-12 col-xs-12 p-t-b-10 b-b-2">
+                                                                <div class="col-md-2 col-xs-4 row">
+                                                                    <h3>21</h3>
+                                                                    <h4>Nov</h4>
+                                                                </div>
+                                                                <div class="col-md-10 col-xs-8">
+                                                                    <a href="https://www.itb.ac.id/agenda/read/1615/home/isgnss-international-seminar-global-navigation-satellite-systems"><h5>
+                                                                        ISGNSS - International Seminar Global Navigation Satellite Systems</h5>
+                                                                        <span class="tfro">Bali, Indonesia</span>
+                                                                    </a>
+                                                                </div>
+                                                                </div>
+                                                                                                                            <div class="col-md-12 col-xs-12 p-t-b-10 b-b-2">
+                                                                <div class="col-md-2 col-xs-4 row">
+                                                                    <h3>27</h3>
+                                                                    <h4>Nov</h4>
+                                                                </div>
+                                                                <div class="col-md-10 col-xs-8">
+                                                                    <a href="https://www.itb.ac.id/agenda/read/1622/home/concern-2-2018-conference-for-civil-engineering-research-network-ke-2"><h5>
+                                                                        ConCERN-2 2018 (Conference for Civil Engineering Research Network ke-2)</h5>
+                                                                        <span class="tfro">Aula Timur & Gedung CIBE</span>
+                                                                    </a>
+                                                                </div>
+                                                                </div>
+                                                                                                                </div>
+                                                    <!-- End of Agenda Articles-->
+                                                </div>
+                                            </div>
+                                                                                                                            <div class="col-md-6 pull-left m-b-20">
+                                                <h2>Kalender Akademik</h2>
+                                                <div class="index">
+                                                    <!-- Agenda Articles -->
+                                                    <div class="agenda listing5">
+                                                                                                                            <div class="col-md-12 col-xs-12 p-t-b-10 b-b-2">
+                                                                <div class="col-md-2 col-xs-4 row">
+                                                                    <h3>30</h3>
+                                                                    <h4>Nov</h4>
+                                                                </div>
+                                                                <div class="col-md-10 col-xs-8">
+                                                                    <h5>Hari Terakhir Masa Kuliah Semester I-2018/2019</h5><span class="tfro">30    November    2018</span>
+                                                                </div>
+                                                                </div>
+                                                                                                                            <div class="col-md-12 col-xs-12 p-t-b-10 b-b-2">
+                                                                <div class="col-md-2 col-xs-4 row">
+                                                                    <h3>03</h3>
+                                                                    <h4>Dec</h4>
+                                                                </div>
+                                                                <div class="col-md-10 col-xs-8">
+                                                                    <h5>Ujian Akhir Semester I-2018/2019</h5><span class="tfro">3   Desember    -   18  Desember    2018</span>
+                                                                </div>
+                                                                </div>
+                                                                                                                            <div class="col-md-12 col-xs-12 p-t-b-10 b-b-2">
+                                                                <div class="col-md-2 col-xs-4 row">
+                                                                    <h3>03</h3>
+                                                                    <h4>Jan</h4>
+                                                                </div>
+                                                                <div class="col-md-10 col-xs-8">
+                                                                    <h5>Hari Terakhir Pengumuman Hasil Ujian Semester I-2018/2019</h5><span class="tfro">3  Januari 2019</span>
+                                                                </div>
+                                                                </div>
+                                                                                                                            <div class="col-md-12 col-xs-12 p-t-b-10 b-b-2">
+                                                                <div class="col-md-2 col-xs-4 row">
+                                                                    <h3>03</h3>
+                                                                    <h4>Jan</h4>
+                                                                </div>
+                                                                <div class="col-md-10 col-xs-8">
+                                                                    <h5>Batas Waktu Konfirmasi Kelas/Mata Kuliah Semester II-2018/2019 oleh Program Studi</h5><span class="tfro">3  Januari 2019</span>
+                                                                </div>
+                                                                </div>
+                                                                                                                </div>
+                                                    <!-- End of Agenda Articles-->
+                                                </div>
+                                            </div>
+                                                                            </div>
+                                </div>
+                            </div>
+                            <!-- End of Agenda-->
+                            <!-- Galeri Articles -->
+                                                            <!-- Galeri-->
+                                <!--<div id="main-foto">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-12"><h2><a href=""></a></h2></div>
+                                            <div class="index gallery-content ">
+                                                                                                    <div class="col-sm-3 col-md-3 pull-left">
+                                                        <div class="thumbnail">
+                                                            <a href="" target="_self">
+                                                                <img
+                                                                    src=""
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="caption">
+                                                            <a href="" target="_self"></a>
+                                                        </div>
+                                                    </div>
+                                                                                            </div>
+                                        </div>
+                                    </div>
+                                </div>-->
+                                <!--End of Galeri-->
+                                                    </div>
+                        <!--
+                        <div class="col-md-4 m-t-40">
+                            <div class="boxes-2 m-b-20">
+                                <span></span><br/>
+                                                                
+
+
+                            </div>
+
+
+
+
+                            <div class="focus listing2">
+
+                                <h4 class="b-b m-b-20 p-t-10 p-b-10 f-w-300"></h4>
+
+                                <ul class="list-unstyled group">
+
+                                                                            <li>
+                                            <a href=""></a><br/>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                        </div>
+-->
+                    </div>
+                </div>
+            </div>
+            <!-- end of Main News -->
+        </div><!-- /.container -->
+    </div><!-- /.container -->
+
+</div>
+
+<!-- /.modal multimedia-->
+<!--<div class="modal   " id="multimedia" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-full">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                <h4 class="modal-title bold uppercase">{{modal.title}}</h4>
+            </div>
+            <div class="modal-body">
+                <div class="">
+                    <small>Dipublikasikan {{modal.tanggal | date:'dd MMMM yyyy'}}</small>
+                </div>
+                <iframe id="yframe" width="560" height="315" data-ng-src="{{modal.url}}" allowfullscreen
+                        allowscriptaccess="always"></iframe>
+                <div class="content" data-ng-bind-html="modal.description"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn dark btn-outline" data-dismiss="modal" data-ng-click="stopClose()">
+                    Close
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</div>-->
+<!-- /.modal -->
+
+
+
+<script>
+
+    app.controller('Ctrl1', function ($scope, $sce, $http) {
+
+        $http.get('https://www.googleapis.com/youtube/v3/search?part=id%2Csnippet&channelId=UC-iaRyzsXT6pUYal9tTCg4A&eventType=live&type=video&key=AIzaSyCnzccagXMe9_Ywi1FV3vlHOqYNFsjsv9w')
+            .then(function (ret) {
+                $scope.online = ret.data.pageInfo.totalResults;
+                if ($scope.online > 0) {
+                    var json = ret.data.items[0].snippet;
+                    $scope.deskripsi = json.description;
+                    $scope.title = json.title;
+
+                }
+            });
+
+
+        $http.get('https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=4&playlistId=UU-iaRyzsXT6pUYal9tTCg4A&key=AIzaSyCRl1I45aEJBAs-R43BmHfoHMb4MDzj3CE')
+            .then(function (ret) {
+                $scope.yutub = ret.data.items;
+            });
+
+        $scope.read = function (index) {
+            var data = $scope.yutub[index];
+
+            $scope.modal = {};
+            $scope.modal.title = data.snippet.title;
+            $scope.modal.tanggal = data.snippet.publishedAt;
+            $scope.modal.description = data.snippet.description;
+            $scope.modal.url = $sce.trustAsResourceUrl("https://www.youtube.com/embed/" + data.snippet.resourceId.videoId + "?enablejsapi=1&version=3&playerapiid=ytplayer");
+        }
+
+        $scope.stopClose = function () {
+            $('#yframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+        }
+
+    });
+</script>
+
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="navbar publicbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3 col-md-3"><h4><a href="http://usm.itb.ac.id/" target="_blank"><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;USM</a></h4></div>
+                        <div class="col-xs-6 col-sm-3 col-md-3"><h4><a href="https://www.itb.ac.id/directories"><span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;Direktori</a></h4></div>
+                        <div class="col-xs-6 col-sm-3 col-md-3"><h4><a href="http://petakampus.itb.ac.id/" target="_blank"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;Peta Kampus </a></h4></div>
+                        <div class="col-xs-6 col-sm-3 col-md-3"><h4><a href="https://www.itb.ac.id/kontak"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Kontak</a></h4></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar servicebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-8 m-b-20">
+                            <h4>Layanan</h4>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-3 col-md-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="https://www.itb.ac.id/sambutanrektor">Sambutan Rektor</a></li>
+                                        <li><a href="https://www.itb.ac.id/agenda">Agenda Kegiatan</a></li>
+                                        <li><a href="https://www.itb.ac.id/agenda/academic">Kalender Akademik</a></li>
+                                        <li><a href="https://www.itb.ac.id/calendar">Kalender</a></li>
+                                        <li><a href="https://www.itb.ac.id/focus">Fokus</a></li>
+                                        <li><a href="https://www.itb.ac.id/news/index/category/home">Berita</a></li>
+                                        <li><a href="https://www.itb.ac.id/berita_foto">Foto</a></li>
+                                        <li><a href="https://www.itb.ac.id/multimedia">Video</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 col-md-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="http://infopublik.itb.ac.id" target="_blank">Infopublik</a></li>
+                                        <li><a href="http://journals.itb.ac.id/" target="_blank">Jurnal</a></li>
+                                        <li><a href="http://research.lppm.itb.ac.id/" target="_blank">Hasil Riset</a></li>
+                                        <li><a href="http://digilib.itb.ac.id/" target="_blank">Perpustakaan Digital</a></li>
+                                        <li><a href="http://blendedlearning.itb.ac.id/" target="_blank">Pembelajaran Jarak Jauh</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 col-md-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="http://karir.itb.ac.id/"
+                                               target="_blank">Career Center</a></li>
+                                        <li><a href="http://kemahasiswaan.itb.ac.id/beasiswa/">Beasiswa</a></li>
+                                        <li><a href="http://blogs.itb.ac.id" target="_blank">Blogs</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 col-md-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="http://students.itb.ac.id/" target="_blank">Webmail Students</a>
+                                        </li>
+                                        <li><a href="http://staff.itb.ac.id/" target="_blank">Webmail Staff</a></li>
+                                        <li><a href="https://mailalumni.itb.ac.id/" target="_blank">Email Alumni</a>
+                                        </li>
+                                        <li><a href="https://nic.itb.ac.id" target="_blank">NIC</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 m-b-20">
+                            <h4><br /></h4>
+                            <div class="col-md-4 col-xs-4"><img src="https://itb.ac.id/themes/default/images/logo-itb.png"></div>
+                            <div class="col-md-8 col-xs-8">
+                                <h4><strong>Institut Teknologi Bandung</strong></h4>
+                                Jl. Tamansari 64<br /> 
+                                Bandung 40116 <br />
+                                Jawa Barat<br />
+                                Indonesia<br />
+                                Phone : +62-22-2500935
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pull-right"><a href="#"><span class="glyphicon glyphicon-chevron-up"></span> Back to top</a></p>
+            <p>&copy; Institut Teknologi Bandung. &middot; <a href="https://login.itb.ac.id/cas/login?service=https://www.itb.ac.id/auth">Submit</a> &middot; <a href="/peta-situs">Peta Situs</a></p>
+        </div>
+    </div>
+</footer>    </body>
+
+
+<script src="https://www.itb.ac.id/assets/js/jQuery/jquery.min.js"></script>
+<script src="https://www.itb.ac.id/assets/js/jQuery/jquery.nanogallery.js"></script>
+<script src="https://www.itb.ac.id/js/bootstrap.min.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="https://www.itb.ac.id/assets/js/vendor/holder.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<!--<script src="https://www.itb.ac.id/assets/js/ie10-viewport-bug-workaround.js"></script>-->
+<script src="https://www.itb.ac.id/js/toucheffects.js"></script>
+<!--<script src="https://www.itb.ac.id/js/rand.bg.js"></script>-->
+<script>$(".randbg").RandBG(),$(document).ready(function(){$(".dropdown-toggle").dropdown(),$(".carousel-sync").on("slide.bs.carousel",function(n){var o="right"==n.direction?"prev":"next";$(".carousel-sync").not(".sliding").addClass("sliding").carousel(o)}),$(".carousel-sync").on("slid.bs.carousel",function(n){$(".carousel-sync").removeClass("sliding")}),$("#nanoGallery").nanoGallery({thumbnailWidth:"auto",thumbnailHeight:200,locationHash:!1,thumbnailHoverEffect:"borderLighter,imageScaleIn80"})});
+</script>
+<script src="https://www.itb.ac.id/js/app.min.js"></script>
+<script src="https://www.itb.ac.id/assets/js/intro/jquery.easing.1.3.js"></script>
+<script src="https://www.itb.ac.id/assets/js/intro/jquery.waypoints.min.js"></script>
+<script src="https://www.itb.ac.id/assets/js/intro/jquery.magnific-popup.min.js"></script>
+<script src="https://www.itb.ac.id/assets/js/intro/owl.carousel.min.js"></script>
+<script src="https://www.itb.ac.id/assets/js/underscore.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var HUParams = {"_disabled":[],"SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"centerAllImg":"1","timerOnScrollAllBrowsers":"1","extLinksStyle":null,"extLinksTargetExt":null,"extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"imgSmartLoadEnabled":null,"imgSmartLoadOpts":{"parentSelectors":[".container .content",".container .sidebar","#footer","#header-widgets"],"opts":{"excludeImg":[".tc-holder-img"],"fadeIn_options":100}},"goldenRatio":"1.618","gridGoldenRatioLimit":"350","sbStickyUserSettings":{"desktop":null,"mobile":true},"menuStickyUserSettings":{"desktop":true,"mobile":true},"isDevMode":""};
+/* ]]> */
+</script>
+<script src="https://www.itb.ac.id/assets/js/scriptsmenu.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+                        
+            <script type="text/javascript" charset="UTF-8"
+                    src="https://www.itb.ac.id/assets/js/moment-with-locales.min.js"></script>
+                                
+            <script type="text/javascript" charset="UTF-8"
+                    src="https://www.itb.ac.id/assets/js/raphael-min.js"></script>
+                                
+            <script type="text/javascript" charset="UTF-8"
+                    src="https://www.itb.ac.id/assets/js/ng/angular-bootstrap-calendar.min.js"></script>
+                                
+            <script type="text/javascript" charset="UTF-8"
+                    src="https://www.itb.ac.id/assets/js/ng/angular-bootstrap-calendar-tpls.min.js"></script>
+                                
+            <script type="text/javascript" charset="UTF-8"
+                    src="https://www.itb.ac.id/themes/default/js/leaflet.js"></script>
+                                    
+            <script type="text/javascript">
+var config={logging:!0,baseURL:location.protocol+"//"+location.hostname+"/"};if(navigator.userAgent.match(/IEMobile\/10\.0/)){var msViewportStyle=document.createElement("style");msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}")),document.querySelector("head").appendChild(msViewportStyle)}function executeAjax(e,t,a){return $.ajax({type:"POST",url:e,data:t,dataType:"json",async:!0,success:function(e){a(e)},error:function(e){alert("Error "+e.status+": "+e.statusText)}}),!1}$(document).ready(function(){if($("#session-language-dropdown a").click(function(e){e.preventDefault?e.preventDefault():e.returnValue=!1;var t={language:$(this).attr("rel")};executeAjax(config.baseURL+"ajax/set_session_language",t,function(e){e.success?location.reload():alert("Ada masalah pengaturan bahasa!")})}),$(".editor").length){function e(e,t){var a=new FormData;a.append("file",e),$.ajax({data:a,type:"POST",url:BASE_URL+"/admin/news/uploadimg",cache:!1,contentType:!1,enctype:"multipart/form-data",processData:!1,success:function(e){$(t).summernote("editor.insertImage",e)}})}$(".editor").each(function(){var t=$(this).attr("id");console.log(t),$("#"+t).summernote({minHeight:50,callbacks:{onImageUpload:function(t,a,n){for(var o=t.length-1;o>=0;o--)e(t[o],this),console.log(o)}}})})}});
+</script>
+            </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>Formulir</title>
+		<link rel="stylesheet" href="eksternal.css">
+		<script type="text/javascript" src="form.js"></script>
+	</head>
+	<body background="gambar/4.jpg">
+	<tablealign="center" bgcolor="white" border="5">
+		<div>
+			<h2><p align="center">FORMULIR</p></h2>	<!-- namanya komentar -->	
+			<form action="proses.php" method="get">
+				<table border="0">
+					<br>
+			<hr align="nilai">
+		<br>
+		<font face="garamond" size="5" color="white"> 
+		<form action="proses.php" method="get" >
+			<table align="center" bgcolor="white" border="5">
+				<tr>
+					<td><b>Nama Lengkap</b></td>
+					<td>:
+						<input type="text" name="nama_lengkap"></td>
+				</tr>
+				<tr>
+					<td><b>Email</b></td>
+					<td>: 
+						<input type="text" name="E-mail"></td>
+				</tr>
+				<tr>
+					<td><b>Jenis Kelamin</b></td>
+					<td>: 
+						<input type="radio" name="jenis_kelamin" value="Laki-laki">Laki-laki
+						<input type="radio" name="jenis_kelamin" value="Perempuan">Perempuan</td>
+				</tr>
+				<tr>
+					<td><b>Hobi</b></td>
+					<td>: 
+						<input type="checkbox" name="hobi" value="Menggambar" /> Menggambar
+						<input type="checkbox" name="hobi" value="Menggambar" /> Membaca
+						<input type="checkbox" name="hobi" value="Menggambar" /> Basket
+						<input type="checkbox" name="hobi" value="Berenang" /> Futsal
+						<input type="checkbox" name="hobi" value="Main Game" /> Memasak</td>
+				</tr>
+				<tr>
+					<td><b>Asal</b></td>
+					<td>
+						<select name="kota">
+							<option selected>Pilih Kota</option>
+							<option value="Jakarta">Jakarta</option>
+							<option value="Bandung">Bandung</option>
+							<option value="Semarang">Semarang</option>
+							<option value="Surabaya">Surabaya</option>
+						</select>
+						<form>
+				            <select name="kota" onChange="TampilKota (this.value);">
+				            	<option selected>Provinsi</option>
+				                <option value=""></option>
+				                <option value="jabar">Jawa Barat</option>
+				                <option value="jateng">Jawa Tengah</option>
+				                <option value="jatim">Jawa Timur</option>
+				            </select>
+		        		</form>
+
+					</td>
+				</tr>
+				
+				<tr>
+					<td><b>Alamat Lengkap</b></td> 
+					<td><textarea name="alamat_lengkap" rows="3" cols="40"></textarea></td>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<td><input type="submit" name="Save" value="Save">
+						<input type="reset" value="Reset"></td>
+					</td>
+				</tr>
+				</font>
+			</table>
+				</table>
+			</form>
+			<br>
+			<br>
+			<br>
+			<a href="home.html"><u><b>Back</b></u></a></br>
+
+		</div>
+	</table>
+		
+	</body>
+		<audio src="ms/stg.mp3" width="1024" height="540" autoplay controls loop hidden="hidden"></audio>
+		<footer class="tm-footer">
+   		   <p class="text-xs-center">Copyright &copy; 2018 Erna Rosalina</p>
+        </footer>
+</html>

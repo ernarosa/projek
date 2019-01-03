@@ -1,0 +1,36 @@
+h2{
+	color: black;
+	text-decoration-style: cent
+
+}
+
+p{
+	text-decoration-color: #00000 ;
+
+}
+
+body{
+	
+	font-family: "Open Sans", Arial, sans-serif;
+  	line-height: 1.6;
+  	font-size: 16px;
+ }
+
+
+div{
+	background-color: #B3B6B7;
+	border:4px solid navy;
+	padding: 25px;
+	margin: 25px;
+}
+
+table{
+	border-collapse: collapse;
+	border:0 px solid white;
+	width: 1160px;
+
+}
+td{
+	align-content: center;background-color: white ;
+	width: 20%;
+}
